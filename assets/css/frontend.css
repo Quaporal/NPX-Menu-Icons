@@ -1,0 +1,32 @@
+/* ============================================================ */
+/* ===  NPX Menu Icons — Frontend Styles  ==================== */
+/* ============================================================ */
+
+/**
+ * The .npx-menu-icon span uses inline styles for:
+ *   font-family, font-size, color, font-variation-settings
+ * so only structural / alignment rules are needed here.
+ */
+
+.npx-menu-icon {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+/* Slight optical baseline correction inside anchor tags. */
+a .npx-menu-icon {
+    position: relative;
+    top: -0.05em;
+}
+
+/* ── Menu icon label wrapper ────────────────────────────────
+   Every label text is wrapped in .npx-menu-icon-label so themes
+   can target it independently (e.g. adjust spacing, font, etc.).
+   When "Hide label" is on the element also carries .screen-reader-text
+   (defined by WP core — not redefined here).                    */
+
+.npx-menu-icon-label {
+    /* Structural reset only — visual styles come from the theme. */
+    display: inline;
+}
